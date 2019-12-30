@@ -1,2 +1,0 @@
-# programmer
-kill junior programmer
