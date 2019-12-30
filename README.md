@@ -1,0 +1,2 @@
+# programmer
+kill junior programmer
