@@ -2,13 +2,9 @@ package com.zlk.common.core.entiry;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Data
-@Entity
 public class Role {
-    @Id
     private String id;
     private String type;
     private String remark;

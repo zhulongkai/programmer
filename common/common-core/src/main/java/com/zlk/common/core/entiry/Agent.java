@@ -3,16 +3,12 @@ package com.zlk.common.core.entiry;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
 @Data
-@Entity
 public class Agent implements Serializable {
 
-    @Id
     private String id;//	否	是	string	uuid，唯一标识
     private String name;//	否	否	string	代理商名称
     private String remark;//	否	否	string	代理商简介

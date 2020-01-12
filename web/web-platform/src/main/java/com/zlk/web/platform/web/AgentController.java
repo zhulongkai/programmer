@@ -1,4 +1,4 @@
-package com.zlk.web.platform.controller;
+package com.zlk.web.platform.web;
 
 import com.zlk.common.core.entiry.Agent;
 import com.zlk.service.api.service.AgentService;
