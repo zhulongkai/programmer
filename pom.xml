@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.zhongji.parent</groupId>
         <artifactId>parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>9.9.9.9-SNAPSHOT</version>
         <relativePath/>
     </parent>
 

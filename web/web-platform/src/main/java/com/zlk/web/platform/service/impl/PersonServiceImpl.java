@@ -1,6 +1,6 @@
 package com.zlk.web.platform.service.impl;
 
-import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+//import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import com.zlk.service.api.service.DepartmentService;
 import com.zlk.service.api.service.PersonService;
 import com.zlk.web.platform.repository.PersonRepository;
@@ -16,7 +16,7 @@ public class PersonServiceImpl extends BaseService implements PersonService {
     @Autowired(required = false)
     DepartmentService departmentService;
 
-    @LcnTransaction
+//    @LcnTransaction
     public void insertAll(){
         departmentService.insertDepartment();
         personRepository.insertPerson();
