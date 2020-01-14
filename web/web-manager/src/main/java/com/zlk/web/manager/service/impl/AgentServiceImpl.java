@@ -1,7 +1,6 @@
 package com.zlk.web.manager.service.impl;
 
 
-import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import com.zlk.common.core.entiry.Agent;
 import com.zlk.service.api.service.AgentService;
 import com.zlk.web.manager.repository.AgentRepository;
@@ -22,7 +21,7 @@ public class AgentServiceImpl extends BaseService implements AgentService , Seri
     AgentRepository agentRepository;
 
     @Override
-    @LcnTransaction
+//    @LcnTransaction
     public Agent getAgent(String id) {
         Agent agent = agentRepository.getAgent(id);
         Agent a = new Agent();

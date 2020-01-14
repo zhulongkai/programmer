@@ -14,13 +14,13 @@ public class AgentController {
     @Autowired(required = false)
     AgentService agentService;
 
-    @Autowired
-    PersonService personService;
+//    @Autowired
+//    PersonService personService;
 
     @RequestMapping("/get/agent/{id}")
     public Agent getAgent(@PathVariable("id") String id){
 
-        personService.insertAll();
+//        personService.insertAll();
 
         return agentService.getAgent(id);
     }
