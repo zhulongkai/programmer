@@ -7,5 +7,7 @@ public  class SymbolUtil {
     public static final String rigt = ")";
     public static final String singlequotationMark = "'";
     public static final String semicolon = ";";
-
+    public static final String bar = "-";
+    public static final String emptystring = "";
+    public static final String point = ".";
 }

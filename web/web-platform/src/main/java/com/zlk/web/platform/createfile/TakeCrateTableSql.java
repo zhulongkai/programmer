@@ -21,4 +21,11 @@ public class TakeCrateTableSql {
         sb.append(dataFountainhead.getFooler());
         return sb.toString();
     }
+
+    public static void main(String[] args){
+
+        String sql = new TakeCrateTableSql(new DataFountainhead()).createSql();
+
+        System.out.println(sql);
+    }
 }
