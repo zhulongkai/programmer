@@ -12,4 +12,11 @@ public class CheckUtil {
         return !isnull(date);
     }
 
+    public static boolean isnull(String date) {
+        return null == date || "".equals(date);
+    }
+
+    public static boolean isnotnull(String date){
+        return !isnull(date);
+    }
 }

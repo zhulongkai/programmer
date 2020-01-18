@@ -10,4 +10,5 @@ public  class SymbolUtil {
     public static final String bar = "-";
     public static final String emptystring = "";
     public static final String point = ".";
+    public static final String slash = "\\";
 }
