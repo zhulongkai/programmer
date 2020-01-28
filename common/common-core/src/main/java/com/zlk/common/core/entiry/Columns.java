@@ -24,6 +24,10 @@ public class Columns implements Serializable {
     private static final String comment = "comment";
     private static final String notnull = "not null";
 
+    /**
+     * 获取建表语句的语句体
+     * @return sql体
+     */
     public StringBuffer getBody(){
         StringBuffer sb = new StringBuffer();
         sb.append(this.name).append(SymbolUtil.space);
@@ -39,6 +43,11 @@ public class Columns implements Serializable {
         return  sb;
     }
 
+    /**
+     * 判断是不是日期格式
+     * @param sb 传进来的字符串
+     * @return 结果
+     */
     private StringBuffer isDatetime(StringBuffer sb){
         if (this.baseType.equals(datetime)) {
             sb.append(this.baseType).append(SymbolUtil.space);
@@ -46,6 +55,15 @@ public class Columns implements Serializable {
             sb.append(this.baseType).append(SymbolUtil.left).append(this.length).append(SymbolUtil.rigt).append(SymbolUtil.space);
         }
         return sb;
+    }
+
+    public void initTest(){
+        this.id = "1";
+        this.isIndex = true;
+        this.isNull = false;
+        this.commont = "主键";
+        this.name = "id";
+        this.javaType = "String";
     }
 
 }

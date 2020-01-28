@@ -29,6 +29,10 @@ dubbo:
   scan:
     basePackages: com.zhongji.project.platform.service.impl  #扫描需要暴露的服务
 spring:
+
+
+
+
 #  cloud:
 #    compatibility-verifier:
 #      enabled: false
@@ -113,6 +117,21 @@ spring:
     active: dev
   #  thymeleaf:
   #    mode: LEGACYHTML5
+
+  freemarker:
+    allow-request-override: false
+    allow-session-override: false
+    cache: false
+    charset: utf-8
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    prefer-file-system-access: true
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.zlk.common.core.entity

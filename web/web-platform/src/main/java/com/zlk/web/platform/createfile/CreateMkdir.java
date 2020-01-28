@@ -45,6 +45,7 @@ public class CreateMkdir {
         createMkdir(mkdir);
         return createFile(file);
     }
+
     public static void main(String[] args)throws IOException{
         String fileRoot = new TakeFileRoot().getFileRoot();
         String fileName = new TakeFileRoot().getFileName();
@@ -52,4 +53,5 @@ public class CreateMkdir {
         new CreateMkdir().createMkdir(fileRoot);
         new CreateMkdir().createFile(fileRoot+fileName);
     }
+
 }

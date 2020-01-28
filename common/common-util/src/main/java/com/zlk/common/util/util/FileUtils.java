@@ -1,12 +1,14 @@
 package com.zlk.common.util.util;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import com.jfinal.template.TemplateException;
+
+import javax.swing.filechooser.FileSystemView;
+import java.io.*;
 import java.net.URL;
 
 public class FileUtils {
+
+
     //无成员变量 --- 无状态
     public static String getScript(String fileName){
         String resource = FileUtils.class.getClassLoader().getResource(fileName).getPath();
